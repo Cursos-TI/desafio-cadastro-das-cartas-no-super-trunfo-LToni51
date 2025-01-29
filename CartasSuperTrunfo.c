@@ -1,23 +1,37 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
+
 
 int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    printf("Quem ta aqui é LUCAS");
+  
+    char estado = 'A';
+    char codigoDaCidade[4] = "A01";
+    char nomeDaCidade[50];
+    int populacao = 0;
+    float area = 0.0;
+    float pib =0.0;
+    int numDePontosTuristicos;
+    printf("Bem vindo ao super trunfo! Por favor cadastre a cidade que deseja! \n");
+    printf("Qual o nome da cidade? \n");
+    scanf("%s", nomeDaCidade);
+    printf("Qual a população da cidade %s?\n", nomeDaCidade);
+    scanf("%d", &populacao);
+    printf("Qual a area da cidade, %s?\n", nomeDaCidade);
+    scanf("%f", &area);
+    printf("Qual o PIB da cidade %s? \n" , nomeDaCidade);
+    scanf("%f", &pib);
+    printf("Quantos pontos turisticos tem a cidade? \n");
+    scanf("%d", &numDePontosTuristicos);
+    printf("Parabens por registrar sua cidade aqui está suas informações \n");
+    printf("ESTADO: %c \n", estado);
+    printf("CÓDIGO DA CARTA: %s \n", codigoDaCidade);
+    printf("CIDADE: %s \n", nomeDaCidade);
+    printf("POPULAÇÃO: %d habitantes\n", populacao);
+    printf("ÁREA: %f quilometros \n", area);
+    printf("PIB: %f milhões de reais \n", pib);
+    printf("PONTOS TURÍSTICOS: %d \n", numDePontosTuristicos);
 
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+
 
     return 0;
 }
